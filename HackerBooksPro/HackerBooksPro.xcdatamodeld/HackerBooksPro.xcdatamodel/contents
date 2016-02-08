@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="Annotation" representedClassName="KCGAnnotation" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="modificationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="test" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="books" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="annotations" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Author" representedClassName="KCGAuthor" syncable="YES">
+        <attribute name="nameAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bookauthors" toMany="YES" deletionRule="Nullify" destinationEntity="BookAuthor" inverseName="authors" inverseEntity="BookAuthor" syncable="YES"/>
+    </entity>
+    <entity name="Book" representedClassName="KCGBook" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="annotations" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Annotation" inverseName="books" inverseEntity="Annotation" syncable="YES"/>
+        <relationship name="bookauthors" toMany="YES" deletionRule="Nullify" destinationEntity="BookAuthor" inverseName="books" inverseEntity="BookAuthor" syncable="YES"/>
+        <relationship name="booktags" toMany="YES" deletionRule="Nullify" destinationEntity="BookTag" inverseName="books" inverseEntity="BookTag" syncable="YES"/>
+        <relationship name="pdfs" maxCount="1" deletionRule="Cascade" destinationEntity="PDF" inverseName="books" inverseEntity="PDF" syncable="YES"/>
+        <relationship name="photos" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Photo" inverseName="books" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="BookAuthor" representedClassName="KCGBookAuthor" syncable="YES">
+        <relationship name="authors" maxCount="1" deletionRule="Cascade" destinationEntity="Author" inverseName="bookauthors" inverseEntity="Author" syncable="YES"/>
+        <relationship name="books" maxCount="1" deletionRule="Cascade" destinationEntity="Book" inverseName="bookauthors" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="BookTag" representedClassName="KCGBookTag" syncable="YES">
+        <relationship name="books" maxCount="1" deletionRule="Cascade" destinationEntity="Book" inverseName="booktags" inverseEntity="Book" syncable="YES"/>
+        <relationship name="booktags" maxCount="1" deletionRule="Cascade" destinationEntity="Tag" inverseName="booktags" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="PDF" representedClassName="KCGPdf" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="urlString" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="books" maxCount="1" deletionRule="Cascade" destinationEntity="Book" inverseName="pdfs" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="KCGPhoto" syncable="YES">
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="books" maxCount="1" deletionRule="Cascade" destinationEntity="Book" inverseName="photos" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="KCGTag" syncable="YES">
+        <attribute name="nameTag" attributeType="String" syncable="YES"/>
+        <relationship name="booktags" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="BookTag" inverseName="booktags" inverseEntity="BookTag" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Annotation" positionX="0" positionY="54" width="128" height="105"/>
+        <element name="Author" positionX="-36" positionY="27" width="128" height="75"/>
+        <element name="Book" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="PDF" positionX="-54" positionY="0" width="128" height="30"/>
+        <element name="Photo" positionX="9" positionY="81" width="128" height="75"/>
+        <element name="Tag" positionX="-18" positionY="36" width="128" height="75"/>
+        <element name="BookTag" positionX="-36" positionY="54" width="128" height="75"/>
+        <element name="BookAuthor" positionX="-27" positionY="63" width="128" height="75"/>
+    </elements>
+</model>

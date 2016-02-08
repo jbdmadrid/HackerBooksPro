@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D05A50B1C68909500623CA6 /* KCGBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D05A5091C68909500623CA6 /* KCGBookViewController.m */; };
+		0D05A50C1C68909500623CA6 /* KCGBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D05A50A1C68909500623CA6 /* KCGBookViewController.xib */; };
+		0D7B75691C5FC3FD00620184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75681C5FC3FD00620184 /* main.m */; };
+		0D7B756C1C5FC3FD00620184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B756B1C5FC3FD00620184 /* AppDelegate.m */; };
+		0D7B75751C5FC3FD00620184 /* HackerBooksPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75731C5FC3FD00620184 /* HackerBooksPro.xcdatamodeld */; };
+		0D7B75771C5FC3FD00620184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7B75761C5FC3FD00620184 /* Assets.xcassets */; };
+		0D7B757A1C5FC3FD00620184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7B75781C5FC3FD00620184 /* LaunchScreen.storyboard */; };
+		0D7B75851C5FC3FE00620184 /* HackerBooksProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75841C5FC3FE00620184 /* HackerBooksProTests.m */; };
+		0D7B75981C5FD0D000620184 /* _KCGAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75911C5FD0D000620184 /* _KCGAnnotation.m */; };
+		0D7B75991C5FD0D000620184 /* _KCGAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75931C5FD0D000620184 /* _KCGAuthor.m */; };
+		0D7B759B1C5FD0D000620184 /* _KCGPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75971C5FD0D000620184 /* _KCGPdf.m */; };
+		0D7B759E1C5FD11E00620184 /* _KCGTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B759D1C5FD11E00620184 /* _KCGTag.m */; };
+		0D7B75A91C5FD14900620184 /* KCGAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75A01C5FD14900620184 /* KCGAnnotation.m */; };
+		0D7B75AA1C5FD14900620184 /* KCGAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75A21C5FD14900620184 /* KCGAuthor.m */; };
+		0D7B75AC1C5FD14900620184 /* KCGPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75A61C5FD14900620184 /* KCGPdf.m */; };
+		0D7B75AD1C5FD14900620184 /* KCGTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75A81C5FD14900620184 /* KCGTag.m */; };
+		0D7B75B51C5FD2ED00620184 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75B21C5FD2ED00620184 /* AGTCoreDataStack.m */; };
+		0D7B75B61C5FD2ED00620184 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75B41C5FD2ED00620184 /* AGTCoreDataTableViewController.m */; };
+		0D7B75B91C5FD34E00620184 /* KCGTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75B81C5FD34E00620184 /* KCGTagsViewController.m */; };
+		0D7B75BC1C5FD5EF00620184 /* KCGBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75BB1C5FD5EF00620184 /* KCGBook.m */; };
+		0D7B75BF1C5FD5FC00620184 /* _KCGPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75BE1C5FD5FC00620184 /* _KCGPhoto.m */; };
+		0D7B75C21C5FD60700620184 /* KCGPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75C11C5FD60700620184 /* KCGPhoto.m */; };
+		0D7B75C51C5FD63300620184 /* _KCGBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75C41C5FD63300620184 /* _KCGBook.m */; };
+		0DE5279C1C64A3EE00936AA0 /* _KCGBookTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5279B1C64A3EE00936AA0 /* _KCGBookTag.m */; };
+		0DE5279F1C64A41A00936AA0 /* _KCGBookAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5279E1C64A41A00936AA0 /* _KCGBookAuthor.m */; };
+		0DE527A41C64A43400936AA0 /* KCGBookAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE527A11C64A43400936AA0 /* KCGBookAuthor.m */; };
+		0DE527A51C64A43400936AA0 /* KCGBookTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE527A31C64A43400936AA0 /* KCGBookTag.m */; };
+		0DE527A91C64DE3D00936AA0 /* KCGBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE527A81C64DE3D00936AA0 /* KCGBooksViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D7B75811C5FC3FE00620184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D7B755C1C5FC3FD00620184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D7B75631C5FC3FD00620184;
+			remoteInfo = HackerBooksPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D05A5081C68909500623CA6 /* KCGBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGBookViewController.h; sourceTree = "<group>"; };
+		0D05A5091C68909500623CA6 /* KCGBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGBookViewController.m; sourceTree = "<group>"; };
+		0D05A50A1C68909500623CA6 /* KCGBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KCGBookViewController.xib; sourceTree = "<group>"; };
+		0D7B75641C5FC3FD00620184 /* HackerBooksPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBooksPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D7B75681C5FC3FD00620184 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D7B756A1C5FC3FD00620184 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D7B756B1C5FC3FD00620184 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D7B75741C5FC3FD00620184 /* HackerBooksPro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackerBooksPro.xcdatamodel; sourceTree = "<group>"; };
+		0D7B75761C5FC3FD00620184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D7B75791C5FC3FD00620184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D7B757B1C5FC3FD00620184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D7B75801C5FC3FE00620184 /* HackerBooksProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerBooksProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D7B75841C5FC3FE00620184 /* HackerBooksProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBooksProTests.m; sourceTree = "<group>"; };
+		0D7B75861C5FC3FE00620184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D7B75901C5FD0D000620184 /* _KCGAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGAnnotation.h; sourceTree = "<group>"; };
+		0D7B75911C5FD0D000620184 /* _KCGAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGAnnotation.m; sourceTree = "<group>"; };
+		0D7B75921C5FD0D000620184 /* _KCGAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGAuthor.h; sourceTree = "<group>"; };
+		0D7B75931C5FD0D000620184 /* _KCGAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGAuthor.m; sourceTree = "<group>"; };
+		0D7B75961C5FD0D000620184 /* _KCGPdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGPdf.h; sourceTree = "<group>"; };
+		0D7B75971C5FD0D000620184 /* _KCGPdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGPdf.m; sourceTree = "<group>"; };
+		0D7B759C1C5FD11E00620184 /* _KCGTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGTag.h; sourceTree = "<group>"; };
+		0D7B759D1C5FD11E00620184 /* _KCGTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGTag.m; sourceTree = "<group>"; };
+		0D7B759F1C5FD14900620184 /* KCGAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGAnnotation.h; sourceTree = "<group>"; };
+		0D7B75A01C5FD14900620184 /* KCGAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGAnnotation.m; sourceTree = "<group>"; };
+		0D7B75A11C5FD14900620184 /* KCGAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGAuthor.h; sourceTree = "<group>"; };
+		0D7B75A21C5FD14900620184 /* KCGAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGAuthor.m; sourceTree = "<group>"; };
+		0D7B75A51C5FD14900620184 /* KCGPdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPdf.h; sourceTree = "<group>"; };
+		0D7B75A61C5FD14900620184 /* KCGPdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPdf.m; sourceTree = "<group>"; };
+		0D7B75A71C5FD14900620184 /* KCGTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGTag.h; sourceTree = "<group>"; };
+		0D7B75A81C5FD14900620184 /* KCGTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGTag.m; sourceTree = "<group>"; };
+		0D7B75B11C5FD2ED00620184 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		0D7B75B21C5FD2ED00620184 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
+		0D7B75B31C5FD2ED00620184 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		0D7B75B41C5FD2ED00620184 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		0D7B75B71C5FD34E00620184 /* KCGTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGTagsViewController.h; sourceTree = "<group>"; };
+		0D7B75B81C5FD34E00620184 /* KCGTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGTagsViewController.m; sourceTree = "<group>"; };
+		0D7B75BA1C5FD5EF00620184 /* KCGBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGBook.h; sourceTree = "<group>"; };
+		0D7B75BB1C5FD5EF00620184 /* KCGBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGBook.m; sourceTree = "<group>"; };
+		0D7B75BD1C5FD5FC00620184 /* _KCGPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGPhoto.h; sourceTree = "<group>"; };
+		0D7B75BE1C5FD5FC00620184 /* _KCGPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGPhoto.m; sourceTree = "<group>"; };
+		0D7B75C01C5FD60700620184 /* KCGPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGPhoto.h; sourceTree = "<group>"; };
+		0D7B75C11C5FD60700620184 /* KCGPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPhoto.m; sourceTree = "<group>"; };
+		0D7B75C31C5FD63300620184 /* _KCGBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGBook.h; sourceTree = "<group>"; };
+		0D7B75C41C5FD63300620184 /* _KCGBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGBook.m; sourceTree = "<group>"; };
+		0DE5279A1C64A3EE00936AA0 /* _KCGBookTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGBookTag.h; sourceTree = "<group>"; };
+		0DE5279B1C64A3EE00936AA0 /* _KCGBookTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGBookTag.m; sourceTree = "<group>"; };
+		0DE5279D1C64A41A00936AA0 /* _KCGBookAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGBookAuthor.h; sourceTree = "<group>"; };
+		0DE5279E1C64A41A00936AA0 /* _KCGBookAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGBookAuthor.m; sourceTree = "<group>"; };
+		0DE527A01C64A43400936AA0 /* KCGBookAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGBookAuthor.h; sourceTree = "<group>"; };
+		0DE527A11C64A43400936AA0 /* KCGBookAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGBookAuthor.m; sourceTree = "<group>"; };
+		0DE527A21C64A43400936AA0 /* KCGBookTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGBookTag.h; sourceTree = "<group>"; };
+		0DE527A31C64A43400936AA0 /* KCGBookTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGBookTag.m; sourceTree = "<group>"; };
+		0DE527A71C64DE3D00936AA0 /* KCGBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGBooksViewController.h; sourceTree = "<group>"; };
+		0DE527A81C64DE3D00936AA0 /* KCGBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGBooksViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D7B75611C5FC3FD00620184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D7B757D1C5FC3FE00620184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D7B755B1C5FC3FD00620184 = {
+			isa = PBXGroup;
+			children = (
+				0D7B75661C5FC3FD00620184 /* HackerBooksPro */,
+				0D7B75831C5FC3FE00620184 /* HackerBooksProTests */,
+				0D7B75651C5FC3FD00620184 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D7B75651C5FC3FD00620184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B75641C5FC3FD00620184 /* HackerBooksPro.app */,
+				0D7B75801C5FC3FE00620184 /* HackerBooksProTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D7B75661C5FC3FD00620184 /* HackerBooksPro */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B75B11C5FD2ED00620184 /* AGTCoreDataStack.h */,
+				0D7B75B21C5FD2ED00620184 /* AGTCoreDataStack.m */,
+				0D7B75B01C5FD19A00620184 /* Controllers */,
+				0D7B758F1C5FCEDC00620184 /* Models */,
+				0D7B756A1C5FC3FD00620184 /* AppDelegate.h */,
+				0D7B756B1C5FC3FD00620184 /* AppDelegate.m */,
+				0D7B75761C5FC3FD00620184 /* Assets.xcassets */,
+				0D7B75781C5FC3FD00620184 /* LaunchScreen.storyboard */,
+				0D7B757B1C5FC3FD00620184 /* Info.plist */,
+				0D7B75731C5FC3FD00620184 /* HackerBooksPro.xcdatamodeld */,
+				0D7B75671C5FC3FD00620184 /* Supporting Files */,
+			);
+			path = HackerBooksPro;
+			sourceTree = "<group>";
+		};
+		0D7B75671C5FC3FD00620184 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B75681C5FC3FD00620184 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D7B75831C5FC3FE00620184 /* HackerBooksProTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B75841C5FC3FE00620184 /* HackerBooksProTests.m */,
+				0D7B75861C5FC3FE00620184 /* Info.plist */,
+			);
+			path = HackerBooksProTests;
+			sourceTree = "<group>";
+		};
+		0D7B758F1C5FCEDC00620184 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B75AF1C5FD17A00620184 /* Machine */,
+				0D7B75AE1C5FD15300620184 /* Human */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0D7B75AE1C5FD15300620184 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B759F1C5FD14900620184 /* KCGAnnotation.h */,
+				0D7B75A01C5FD14900620184 /* KCGAnnotation.m */,
+				0D7B75A11C5FD14900620184 /* KCGAuthor.h */,
+				0D7B75A21C5FD14900620184 /* KCGAuthor.m */,
+				0D7B75BA1C5FD5EF00620184 /* KCGBook.h */,
+				0D7B75BB1C5FD5EF00620184 /* KCGBook.m */,
+				0DE527A01C64A43400936AA0 /* KCGBookAuthor.h */,
+				0DE527A11C64A43400936AA0 /* KCGBookAuthor.m */,
+				0DE527A21C64A43400936AA0 /* KCGBookTag.h */,
+				0DE527A31C64A43400936AA0 /* KCGBookTag.m */,
+				0D7B75C01C5FD60700620184 /* KCGPhoto.h */,
+				0D7B75C11C5FD60700620184 /* KCGPhoto.m */,
+				0D7B75A51C5FD14900620184 /* KCGPdf.h */,
+				0D7B75A61C5FD14900620184 /* KCGPdf.m */,
+				0D7B75A71C5FD14900620184 /* KCGTag.h */,
+				0D7B75A81C5FD14900620184 /* KCGTag.m */,
+			);
+			name = Human;
+			sourceTree = "<group>";
+		};
+		0D7B75AF1C5FD17A00620184 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				0DE5279A1C64A3EE00936AA0 /* _KCGBookTag.h */,
+				0DE5279B1C64A3EE00936AA0 /* _KCGBookTag.m */,
+				0D7B75901C5FD0D000620184 /* _KCGAnnotation.h */,
+				0D7B75911C5FD0D000620184 /* _KCGAnnotation.m */,
+				0D7B75921C5FD0D000620184 /* _KCGAuthor.h */,
+				0D7B75BD1C5FD5FC00620184 /* _KCGPhoto.h */,
+				0DE5279D1C64A41A00936AA0 /* _KCGBookAuthor.h */,
+				0DE5279E1C64A41A00936AA0 /* _KCGBookAuthor.m */,
+				0D7B75C31C5FD63300620184 /* _KCGBook.h */,
+				0D7B75C41C5FD63300620184 /* _KCGBook.m */,
+				0D7B75BE1C5FD5FC00620184 /* _KCGPhoto.m */,
+				0D7B759C1C5FD11E00620184 /* _KCGTag.h */,
+				0D7B759D1C5FD11E00620184 /* _KCGTag.m */,
+				0D7B75931C5FD0D000620184 /* _KCGAuthor.m */,
+				0D7B75961C5FD0D000620184 /* _KCGPdf.h */,
+				0D7B75971C5FD0D000620184 /* _KCGPdf.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		0D7B75B01C5FD19A00620184 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D7B75B31C5FD2ED00620184 /* AGTCoreDataTableViewController.h */,
+				0D7B75B41C5FD2ED00620184 /* AGTCoreDataTableViewController.m */,
+				0D7B75B71C5FD34E00620184 /* KCGTagsViewController.h */,
+				0D7B75B81C5FD34E00620184 /* KCGTagsViewController.m */,
+				0DE527A71C64DE3D00936AA0 /* KCGBooksViewController.h */,
+				0DE527A81C64DE3D00936AA0 /* KCGBooksViewController.m */,
+				0D05A5081C68909500623CA6 /* KCGBookViewController.h */,
+				0D05A5091C68909500623CA6 /* KCGBookViewController.m */,
+				0D05A50A1C68909500623CA6 /* KCGBookViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D7B75631C5FC3FD00620184 /* HackerBooksPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D7B75891C5FC3FE00620184 /* Build configuration list for PBXNativeTarget "HackerBooksPro" */;
+			buildPhases = (
+				0D7B75601C5FC3FD00620184 /* Sources */,
+				0D7B75611C5FC3FD00620184 /* Frameworks */,
+				0D7B75621C5FC3FD00620184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackerBooksPro;
+			productName = HackerBooksPro;
+			productReference = 0D7B75641C5FC3FD00620184 /* HackerBooksPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D7B757F1C5FC3FE00620184 /* HackerBooksProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D7B758C1C5FC3FE00620184 /* Build configuration list for PBXNativeTarget "HackerBooksProTests" */;
+			buildPhases = (
+				0D7B757C1C5FC3FE00620184 /* Sources */,
+				0D7B757D1C5FC3FE00620184 /* Frameworks */,
+				0D7B757E1C5FC3FE00620184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D7B75821C5FC3FE00620184 /* PBXTargetDependency */,
+			);
+			name = HackerBooksProTests;
+			productName = HackerBooksProTests;
+			productReference = 0D7B75801C5FC3FE00620184 /* HackerBooksProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D7B755C1C5FC3FD00620184 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = KeepCoding;
+				TargetAttributes = {
+					0D7B75631C5FC3FD00620184 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0D7B757F1C5FC3FE00620184 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 0D7B75631C5FC3FD00620184;
+					};
+				};
+			};
+			buildConfigurationList = 0D7B755F1C5FC3FD00620184 /* Build configuration list for PBXProject "HackerBooksPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D7B755B1C5FC3FD00620184;
+			productRefGroup = 0D7B75651C5FC3FD00620184 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D7B75631C5FC3FD00620184 /* HackerBooksPro */,
+				0D7B757F1C5FC3FE00620184 /* HackerBooksProTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D7B75621C5FC3FD00620184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7B757A1C5FC3FD00620184 /* LaunchScreen.storyboard in Resources */,
+				0D7B75771C5FC3FD00620184 /* Assets.xcassets in Resources */,
+				0D05A50C1C68909500623CA6 /* KCGBookViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D7B757E1C5FC3FE00620184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D7B75601C5FC3FD00620184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DE527A41C64A43400936AA0 /* KCGBookAuthor.m in Sources */,
+				0D7B75BC1C5FD5EF00620184 /* KCGBook.m in Sources */,
+				0D7B75991C5FD0D000620184 /* _KCGAuthor.m in Sources */,
+				0D7B75B61C5FD2ED00620184 /* AGTCoreDataTableViewController.m in Sources */,
+				0DE527A91C64DE3D00936AA0 /* KCGBooksViewController.m in Sources */,
+				0D7B75AC1C5FD14900620184 /* KCGPdf.m in Sources */,
+				0D7B75C51C5FD63300620184 /* _KCGBook.m in Sources */,
+				0D7B75BF1C5FD5FC00620184 /* _KCGPhoto.m in Sources */,
+				0D7B75AA1C5FD14900620184 /* KCGAuthor.m in Sources */,
+				0D7B75981C5FD0D000620184 /* _KCGAnnotation.m in Sources */,
+				0DE527A51C64A43400936AA0 /* KCGBookTag.m in Sources */,
+				0D7B75A91C5FD14900620184 /* KCGAnnotation.m in Sources */,
+				0DE5279F1C64A41A00936AA0 /* _KCGBookAuthor.m in Sources */,
+				0D7B75B51C5FD2ED00620184 /* AGTCoreDataStack.m in Sources */,
+				0D7B75AD1C5FD14900620184 /* KCGTag.m in Sources */,
+				0D7B759B1C5FD0D000620184 /* _KCGPdf.m in Sources */,
+				0D7B75C21C5FD60700620184 /* KCGPhoto.m in Sources */,
+				0D05A50B1C68909500623CA6 /* KCGBookViewController.m in Sources */,
+				0DE5279C1C64A3EE00936AA0 /* _KCGBookTag.m in Sources */,
+				0D7B75751C5FC3FD00620184 /* HackerBooksPro.xcdatamodeld in Sources */,
+				0D7B759E1C5FD11E00620184 /* _KCGTag.m in Sources */,
+				0D7B756C1C5FC3FD00620184 /* AppDelegate.m in Sources */,
+				0D7B75691C5FC3FD00620184 /* main.m in Sources */,
+				0D7B75B91C5FD34E00620184 /* KCGTagsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D7B757C1C5FC3FE00620184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7B75851C5FC3FE00620184 /* HackerBooksProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D7B75821C5FC3FE00620184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D7B75631C5FC3FD00620184 /* HackerBooksPro */;
+			targetProxy = 0D7B75811C5FC3FE00620184 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D7B75781C5FC3FD00620184 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D7B75791C5FC3FD00620184 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D7B75871C5FC3FE00620184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0D7B75881C5FC3FE00620184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D7B758A1C5FC3FE00620184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HackerBooksPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.KeepCoding.HackerBooksPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0D7B758B1C5FC3FE00620184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HackerBooksPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.KeepCoding.HackerBooksPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0D7B758D1C5FC3FE00620184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HackerBooksProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.KeepCoding.HackerBooksProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBooksPro.app/HackerBooksPro";
+			};
+			name = Debug;
+		};
+		0D7B758E1C5FC3FE00620184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HackerBooksProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.KeepCoding.HackerBooksProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBooksPro.app/HackerBooksPro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D7B755F1C5FC3FD00620184 /* Build configuration list for PBXProject "HackerBooksPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D7B75871C5FC3FE00620184 /* Debug */,
+				0D7B75881C5FC3FE00620184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D7B75891C5FC3FE00620184 /* Build configuration list for PBXNativeTarget "HackerBooksPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D7B758A1C5FC3FE00620184 /* Debug */,
+				0D7B758B1C5FC3FE00620184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D7B758C1C5FC3FE00620184 /* Build configuration list for PBXNativeTarget "HackerBooksProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D7B758D1C5FC3FE00620184 /* Debug */,
+				0D7B758E1C5FC3FE00620184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0D7B75731C5FC3FD00620184 /* HackerBooksPro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D7B75741C5FC3FD00620184 /* HackerBooksPro.xcdatamodel */,
+			);
+			currentVersion = 0D7B75741C5FC3FD00620184 /* HackerBooksPro.xcdatamodel */;
+			path = HackerBooksPro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0D7B755C1C5FC3FD00620184 /* Project object */;
+}
