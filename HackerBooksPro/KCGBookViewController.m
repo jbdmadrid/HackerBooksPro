@@ -7,13 +7,17 @@
 //
 
 #import "KCGBookViewController.h"
+#import "KCGBookAuthor.h"
 
 @interface KCGBookViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
-@property (weak, nonatomic) IBOutlet UITextField *authorTextField;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 @property (weak, nonatomic) IBOutlet UIWebView *pdfWebView;
 
+
+
 @property (strong, nonatomic) KCGBook *model;
+@property (strong, nonatomic) KCGBookAuthor *modelAu;
 
 
 @end
@@ -36,24 +40,22 @@
     
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+#pragma mark - Life Cycle
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    // sincronizamos modelo -> vistas
+    
+    
+    self.titleLabel.text = self.model.title;
+    self.authorLabel.text = self.modelAu.authors.nameAuthor;
+    self.pdfWebView.dataDetectorTypes = self.model.pdfs.data;
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)buttonAnnotation:(id)sender {
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

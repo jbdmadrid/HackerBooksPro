@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D05A50B1C68909500623CA6 /* KCGBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D05A5091C68909500623CA6 /* KCGBookViewController.m */; };
 		0D05A50C1C68909500623CA6 /* KCGBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D05A50A1C68909500623CA6 /* KCGBookViewController.xib */; };
+		0D37F0F61C6A5C4400396E70 /* KCGAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D37F0F41C6A5C4400396E70 /* KCGAnnotationViewController.m */; };
+		0D37F0F71C6A5C4400396E70 /* KCGAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D37F0F51C6A5C4400396E70 /* KCGAnnotationViewController.xib */; };
 		0D7B75691C5FC3FD00620184 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75681C5FC3FD00620184 /* main.m */; };
 		0D7B756C1C5FC3FD00620184 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B756B1C5FC3FD00620184 /* AppDelegate.m */; };
 		0D7B75751C5FC3FD00620184 /* HackerBooksPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75731C5FC3FD00620184 /* HackerBooksPro.xcdatamodeld */; };
@@ -51,6 +53,9 @@
 		0D05A5081C68909500623CA6 /* KCGBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGBookViewController.h; sourceTree = "<group>"; };
 		0D05A5091C68909500623CA6 /* KCGBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGBookViewController.m; sourceTree = "<group>"; };
 		0D05A50A1C68909500623CA6 /* KCGBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KCGBookViewController.xib; sourceTree = "<group>"; };
+		0D37F0F31C6A5C4400396E70 /* KCGAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGAnnotationViewController.h; sourceTree = "<group>"; };
+		0D37F0F41C6A5C4400396E70 /* KCGAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGAnnotationViewController.m; sourceTree = "<group>"; };
+		0D37F0F51C6A5C4400396E70 /* KCGAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KCGAnnotationViewController.xib; sourceTree = "<group>"; };
 		0D7B75641C5FC3FD00620184 /* HackerBooksPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBooksPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7B75681C5FC3FD00620184 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D7B756A1C5FC3FD00620184 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -242,6 +247,9 @@
 				0D05A5081C68909500623CA6 /* KCGBookViewController.h */,
 				0D05A5091C68909500623CA6 /* KCGBookViewController.m */,
 				0D05A50A1C68909500623CA6 /* KCGBookViewController.xib */,
+				0D37F0F31C6A5C4400396E70 /* KCGAnnotationViewController.h */,
+				0D37F0F41C6A5C4400396E70 /* KCGAnnotationViewController.m */,
+				0D37F0F51C6A5C4400396E70 /* KCGAnnotationViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -329,6 +337,7 @@
 				0D7B757A1C5FC3FD00620184 /* LaunchScreen.storyboard in Resources */,
 				0D7B75771C5FC3FD00620184 /* Assets.xcassets in Resources */,
 				0D05A50C1C68909500623CA6 /* KCGBookViewController.xib in Resources */,
+				0D37F0F71C6A5C4400396E70 /* KCGAnnotationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +362,7 @@
 				0DE527A91C64DE3D00936AA0 /* KCGBooksViewController.m in Sources */,
 				0D7B75AC1C5FD14900620184 /* KCGPdf.m in Sources */,
 				0D7B75C51C5FD63300620184 /* _KCGBook.m in Sources */,
+				0D37F0F61C6A5C4400396E70 /* KCGAnnotationViewController.m in Sources */,
 				0D7B75BF1C5FD5FC00620184 /* _KCGPhoto.m in Sources */,
 				0D7B75AA1C5FD14900620184 /* KCGAuthor.m in Sources */,
 				0D7B75981C5FD0D000620184 /* _KCGAnnotation.m in Sources */,

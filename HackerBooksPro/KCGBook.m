@@ -17,6 +17,9 @@
                   annotation: (KCGAnnotation *) annotation
                     context :(NSManagedObjectContext *) context{
     KCGBook *kb = [self insertInManagedObjectContext:context];
+    
+    [kb addBookauthors:[NSSet setWithArray:author]];
+    [kb addBooktags:[NSSet setWithArray:tags]];
 
     
     
