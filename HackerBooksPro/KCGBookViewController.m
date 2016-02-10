@@ -8,6 +8,7 @@
 
 #import "KCGBookViewController.h"
 #import "KCGBookAuthor.h"
+#import "KCGAnnotationViewController.h"
 
 @interface KCGBookViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -55,6 +56,12 @@
 }
 
 - (IBAction)buttonAnnotation:(id)sender {
+    
+    KCGAnnotationViewController *aVC = [[KCGAnnotationViewController alloc] initWithModel:self.model];
+    
+    [self.navigationController pushViewController:aVC
+                                         animated:YES];
+
 }
 
 

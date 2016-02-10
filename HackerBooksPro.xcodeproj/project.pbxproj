@@ -32,6 +32,7 @@
 		0D7B75BF1C5FD5FC00620184 /* _KCGPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75BE1C5FD5FC00620184 /* _KCGPhoto.m */; };
 		0D7B75C21C5FD60700620184 /* KCGPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75C11C5FD60700620184 /* KCGPhoto.m */; };
 		0D7B75C51C5FD63300620184 /* _KCGBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B75C41C5FD63300620184 /* _KCGBook.m */; };
+		0D97401B1C6BAEC900D7A3C3 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9740191C6BAEC900D7A3C3 /* UIViewController+Navigation.m */; };
 		0DE5279C1C64A3EE00936AA0 /* _KCGBookTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5279B1C64A3EE00936AA0 /* _KCGBookTag.m */; };
 		0DE5279F1C64A41A00936AA0 /* _KCGBookAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5279E1C64A41A00936AA0 /* _KCGBookAuthor.m */; };
 		0DE527A41C64A43400936AA0 /* KCGBookAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE527A11C64A43400936AA0 /* KCGBookAuthor.m */; };
@@ -97,6 +98,8 @@
 		0D7B75C11C5FD60700620184 /* KCGPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGPhoto.m; sourceTree = "<group>"; };
 		0D7B75C31C5FD63300620184 /* _KCGBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGBook.h; sourceTree = "<group>"; };
 		0D7B75C41C5FD63300620184 /* _KCGBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGBook.m; sourceTree = "<group>"; };
+		0D9740191C6BAEC900D7A3C3 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		0D97401A1C6BAEC900D7A3C3 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
 		0DE5279A1C64A3EE00936AA0 /* _KCGBookTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGBookTag.h; sourceTree = "<group>"; };
 		0DE5279B1C64A3EE00936AA0 /* _KCGBookTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KCGBookTag.m; sourceTree = "<group>"; };
 		0DE5279D1C64A41A00936AA0 /* _KCGBookAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KCGBookAuthor.h; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 		0D7B75661C5FC3FD00620184 /* HackerBooksPro */ = {
 			isa = PBXGroup;
 			children = (
+				0D9740181C6BADA000D7A3C3 /* Categories */,
 				0D7B75B11C5FD2ED00620184 /* AGTCoreDataStack.h */,
 				0D7B75B21C5FD2ED00620184 /* AGTCoreDataStack.m */,
 				0D7B75B01C5FD19A00620184 /* Controllers */,
@@ -252,6 +256,15 @@
 				0D37F0F51C6A5C4400396E70 /* KCGAnnotationViewController.xib */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0D9740181C6BADA000D7A3C3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0D9740191C6BAEC900D7A3C3 /* UIViewController+Navigation.m */,
+				0D97401A1C6BAEC900D7A3C3 /* UIViewController+Navigation.h */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +382,7 @@
 				0DE527A51C64A43400936AA0 /* KCGBookTag.m in Sources */,
 				0D7B75A91C5FD14900620184 /* KCGAnnotation.m in Sources */,
 				0DE5279F1C64A41A00936AA0 /* _KCGBookAuthor.m in Sources */,
+				0D97401B1C6BAEC900D7A3C3 /* UIViewController+Navigation.m in Sources */,
 				0D7B75B51C5FD2ED00620184 /* AGTCoreDataStack.m in Sources */,
 				0D7B75AD1C5FD14900620184 /* KCGTag.m in Sources */,
 				0D7B759B1C5FD0D000620184 /* _KCGPdf.m in Sources */,

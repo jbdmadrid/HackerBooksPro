@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KCGBook.h"
+#import "KCGAnnotation.h"
 
 @interface KCGAnnotationViewController : UIViewController
+
+-(id) initWithModel: (KCGBook*) model;
+
 
 @end
