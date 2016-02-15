@@ -93,13 +93,13 @@
     [nc removeObserver:self];
 }
 
--(void) keyboardWillAppear:(NSNotification *)note{
+-(void) keyboardWillAppear:(NSNotification *)book{
     
     if (!self.isKeyBoardVisible) {
         
         self.isKeyBoardVisible = YES;
         
-        NSDictionary *info = note.userInfo;
+        NSDictionary *info = book.userInfo;
         
         self.animationDuration = [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
         CGRect oldFrame = self.annotationText.frame;
@@ -118,13 +118,19 @@
         
     }
     
+    UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:
+                              UIBarButtonSystemItemAction target:self action:(@selector(displayShare:))];
+    
+    self.navigationItem.rightBarButtonItem = share;
+    
+    
     
     
 }
 
--(void) keyboardWillDissappear:(NSNotification *)note{
+-(void) keyboardWillDissappear:(NSNotification *)book{
     
-    NSDictionary *info = note.userInfo;
+    NSDictionary *info = book.userInfo;
     
     CGRect oldFrame = self.annotationText.frame;
     CGRect kbdFrame = [[info objectForKey:UIKeyboardFrameEndUserInfoKey]
@@ -143,6 +149,41 @@
     
     self.isKeyBoardVisible = false;
 }
+
+-(void)displayShare:(id) sender{
+    
+    //Crear un UIActivityController
+    UIActivityViewController *avc = [[UIActivityViewController alloc] initWithActivityItems:[self arrayOfItems] applicationActivities:nil];
+    
+    //Lo presentamos
+    [self presentViewController:avc animated:YES completion:nil];
+}
+
+
+-(NSArray *)arrayOfItems{
+    
+    NSMutableArray * items = [NSMutableArray array];
+    
+    if(self.model.annotations.test){
+        [items addObject:self.model.annotations.test];
+    }
+    
+    return items;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end
